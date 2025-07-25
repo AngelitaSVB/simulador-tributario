@@ -1,0 +1,45 @@
+# ------------------------------
+# BACKEND (Flask + Python)
+# ------------------------------
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+instance/
+.env
+
+# ------------------------------
+# FRONTEND (Angular)
+# ------------------------------
+/node_modules
+/dist
+/tmp
+/out-tsc
+/.angular/cache
+/.angular
+/.vscode
+
+# ------------------------------
+# EDITORES
+# ------------------------------
+.idea/
+*.sublime-workspace
+*.code-workspace
+.history/
+
+# ------------------------------
+# LOGS
+# ------------------------------
+npm-debug.log*
+yarn-error.log*
+testem.log
+libpeerconnection.log
+connect.lock
+
+# ------------------------------
+# SISTEMA
+# ------------------------------
+.DS_Store
+Thumbs.db

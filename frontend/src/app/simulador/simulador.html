@@ -1,0 +1,31 @@
+<div class="toolbar">
+  <h1>Simulador Tributário</h1>
+</div>
+
+<div class="container">
+  <h2>Informe os Dados</h2>
+
+  <label>Receita Comércio:</label>
+  <input type="number" [(ngModel)]="receita_comercio" />
+
+  <label>Receita Serviço:</label>
+  <input type="number" [(ngModel)]="receita_servico" />
+
+  <label>Folha de Pagamento:</label>
+  <input type="number" [(ngModel)]="folha_pagamento" />
+
+  <label>Despesas Anuais:</label>
+  <input type="number" [(ngModel)]="despesas_anuais" />
+
+  <button (click)="calcular()">Calcular</button>
+
+  <div class="result-box" *ngIf="resultado">
+  <h3>Resultado</h3>
+  <p><strong>Simples Nacional:</strong> {{ resultado.simples_nacional | currency:'BRL':'symbol':'1.2-2' }}</p>
+  <p><strong>Lucro Presumido:</strong> {{ resultado.lucro_presumido | currency:'BRL':'symbol':'1.2-2' }}</p>
+  <p><strong>Lucro Real:</strong> {{ resultado.lucro_real | currency:'BRL':'symbol':'1.2-2' }}</p>
+  <p class="highlight"><strong>Melhor Regime:</strong> {{ resultado.melhor_regime }}</p>
+</div>
+
+
+
